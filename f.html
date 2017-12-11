@@ -1,0 +1,40 @@
+
+
+<html>
+   <head>
+      <meta charset="UTF-8" />
+         <title>Animation in HTML5 using the canvas element</title>
+    </head>
+   <body onload="init();">
+      <canvas id="canvas" width="1000" height="600">Your browser does not support the <code><canvas></code>-element.Please think about updating your brower!</canvas>
+      <div id="controls">
+         <button type="button" onclick="speed(-0.1);">Slower</button>
+         <button type="button" onclick="play(this);">Play</button>
+	 <button type="button" onclick="speed(+0.1)">Faster</button>
+      </div>
+
+
+<script>
+var c=document.getElementById("canvas");
+var ctx=c.getContext("2d");
+ctx.fillRect(10,10,100,50);
+ctx.translate(70,70);
+ctx.fillRect(10,10,100,50);
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<style>
+        #myCanvas{border:1px  #ccc solid}
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500" style="background:yellow;">
+			你的浏览器不支持  默认画布300*150
+		</canvas>		
+
+<script type="text/javascript">
+ 	 var c=document.getElementById("myCanvas");
+ var cxt=c.getContext("2d");
+ var grd=cxt.createLinearGradient(0,0,175,50); 
+ grd.addColorStop(0,"#FF0000"); 
+grd.addColorStop(1,"#00FF00"); 
+cxt.fillStyle=grd; cxt.fillRect(0,0,175,50); 
+</script>
+
+	
+</body>
+</html>
